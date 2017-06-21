@@ -8,14 +8,18 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<script>
-			function NoElasticScroll(e) {
-				e.preventDefault();
-			}
-		</script>
 	</head>
 
-	<body ontouchmove="NoElasticScroll(event);">
+	<body>
 		Привет!
+		
+		<script>
+			document.addEventListener('touchstart', function(event) {
+				event.stopPropagation();
+			});
+			document.addEventListener('touchmove', function(event) {
+				event.stopPropagation();
+			});
+		</script>
 	</body>
 </html>

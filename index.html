@@ -7,10 +7,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
 
 	<body>
 		Привет!
+		
+		<script>
+			document.addEventListener('touchstart', utilities.stopBubbling);
+			document.addEventListener('touchmove', utilities.stopBubbling);
+		</script>
 	</body>
 </html>

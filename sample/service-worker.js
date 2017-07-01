@@ -7,6 +7,7 @@
 var CACHE_NAME = 'app_serviceworker_v_1',
 // ссылки на кэшируемые файлы
 	cacheUrls = [
+		'/sample/',
 		'/sample/js/app.js',
 		'/sample/index.html'
 ];
